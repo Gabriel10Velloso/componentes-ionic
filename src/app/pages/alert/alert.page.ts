@@ -18,14 +18,20 @@ export class AlertPage implements OnInit {
   async presentInput() {
 
     const input = await this.alertCtrl.create({
+      cssClass: 'alertWidth', // alterando tamnho do alert
       header: 'Input',
-      subHeader: 'Ingrese su nombre:',
+      subHeader: 'Add nome e e-mail:',
       inputs: [
         {
-          name: 'txtNombre',
+          name: 'txtNome',
           type: 'text',
-          placeholder: 'Nombre'
-        }
+          placeholder: 'Nome'
+        },
+        {
+            name: 'txtEmail',
+            type: 'email',
+            placeholder: 'Email'
+          }
       ],
       buttons: [
         {
@@ -38,7 +44,7 @@ export class AlertPage implements OnInit {
           text: 'OK',
           handler: ( data ) => {
             console.log('Confirm Ok', data);
-            this.titulo = data.txtNombre;
+            this.titulo = data.txtNome;
           }
         }
       ]
@@ -50,9 +56,10 @@ export class AlertPage implements OnInit {
 
   async presentAlert() {
     const alert = await this.alertCtrl.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
+      header: 'Vamo que Vamo !',
+      subHeader: 'Subtitle 🌝',
       message: 'This is an alert message.',
+    
       buttons: [
         {
           text: 'Cancel',
@@ -65,7 +72,7 @@ export class AlertPage implements OnInit {
         {
             text: 'Ok',
             handler: (blah) => {
-              console.log('Botón OK');
+              console.log('Botão OK');
           }
         }
       ]

@@ -11,6 +11,11 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 
-.rojo span, .rojo .sc-ion-action-sheet-md {
+.corvermelha span, .corvermelha .sc-ion-action-sheet-md {
     color: red !important;
+}
+
+.alertWidth{
+    font-size: 10px;
+    transform: scale(2);
 }
