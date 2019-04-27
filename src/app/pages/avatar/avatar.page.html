@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar>
+  
+      <ion-buttons slot="start">  <!--  start center end -- posição do botão voltar -->
+        <ion-back-button defaultHref="/"></ion-back-button> <!-- defaultHref="/" carrega na página principal -->
+      </ion-buttons>
+  
+      <ion-title text-capitalize > Avatar </ion-title><!-- text-capitalize título em maiusculo -->
+      
+      <ion-buttons slot="end">
+          <ion-avatar>
+            <img src="https://s2.glbimg.com/7AP-XQgRRkid8VNioyT0QgvM7zI=/e.glbimg.com/og/ed/f/original/2018/04/09/stan_lee_by_gage_skidmore_3.jpg">
+          </ion-avatar>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+      <ion-chip color="primary" *ngFor="let i of [1,1,1,1]">
+        <ion-avatar>
+            <img src="https://pbs.twimg.com/profile_images/2832206884/ddc249b8571c57baba13c5847a0cdd4c_400x400.jpeg">
+        </ion-avatar>
+        <ion-label>João das Cove</ion-label>
+      </ion-chip>
+      <ion-list>
+          <ion-item *ngFor="let i of [1,1,1,1,1,1,1]">
+            <ion-avatar slot="start">
+            <img src="https://s2.glbimg.com/7AP-XQgRRkid8VNioyT0QgvM7zI=/e.glbimg.com/og/ed/f/original/2018/04/09/stan_lee_by_gage_skidmore_3.jpg">
+            </ion-avatar>
+            <ion-label>Stan Lee</ion-label>
+          </ion-item>
+      </ion-list>
+  </ion-content>
