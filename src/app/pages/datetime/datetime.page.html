@@ -1,0 +1,87 @@
+<app-header titulo="DateTime"></app-header>
+
+<!--  -->
+<ion-content>
+
+    <ion-header>
+        <ion-label>Dados do nacimento</ion-label>
+    </ion-header>
+    
+
+
+    <ion-item>
+        <ion-label>Date</ion-label>
+        <!-- value="{{dataNaci | date: 'yyy-MM-dd'}}" -->
+        <!-- https://momentjs.com/ -->
+        <ion-datetime placeholder="nacimento" 
+                      [ngModel]="dataNaci.toISOString()"
+                      display-format="DD, MM, YYYY" 
+                      cancelText="Cancelar!!!"
+                      (ionChange)="alterandoData($event)">
+        </ion-datetime>
+    </ion-item>
+
+<br>
+<br>
+<br>
+<br>
+
+    <ion-header>
+        <ion-label>Min Y Max</ion-label>
+    </ion-header>
+
+    <ion-item>
+    <ion-label>Min Y Max</ion-label>
+        <!-- Seta para aparecer apenas o ano de 20015 min="2015-01-01" max="2015-12-31" -->
+        <ion-datetime placeholder="yyy-mm-dd" 
+                        [ngModel]="dataNaci.toISOString()"
+                        display-format="DD, MMMM, YYYY" 
+                        cancelText="Cancelar!!!"
+                        min="2015-01-01"
+                        max="2015-12-31"
+                    >
+        </ion-datetime>
+    </ion-item>
+
+
+<br>
+<br>
+<br>
+<br>
+
+    <ion-header>
+        <ion-label>Anos</ion-label>
+    </ion-header>
+
+    <ion-item>
+    <ion-label>Anos</ion-label>
+        <!-- Seta para aparecer apenas o ano de 20015 min="2015-01-01" max="2015-12-31" -->
+        <ion-datetime placeholder="YYY" 
+                        display-format="YYYY" 
+                        min="2015"
+                        max="2025"
+                        value="2021"
+                    >
+        </ion-datetime>
+    </ion-item>
+
+    
+<br>
+<br>
+<br>
+<br>
+
+    <ion-header>
+        <ion-label>Anos</ion-label>
+    </ion-header>
+
+    <ion-item>
+    <ion-label>Anos</ion-label>
+        <!-- Seta para aparecer apenas o ano de 20015 min="2015-01-01" max="2015-12-31" -->
+        <ion-datetime [pickerOptions]="customPickerOptions"
+                       [(ngModel)]="custonDate">
+        </ion-datetime>
+    </ion-item>
+
+
+</ion-content>

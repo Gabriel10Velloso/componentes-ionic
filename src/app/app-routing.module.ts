@@ -10,6 +10,8 @@ const routes: Routes = [
   { path: 'button', loadChildren: './pages/button/button.module#ButtonPageModule' },
   { path: 'card', loadChildren: './pages/card/card.module#CardPageModule' },
   { path: 'checkbox', loadChildren: './pages/checkbox/checkbox.module#CheckboxPageModule' },
+  { path: 'date-time', loadChildren: './pages/datetime/datetime.module#DatetimePageModule' },
+  { path: 'ion-fab', loadChildren: './pages/ion-fab/ion-fab.module#IonFabPageModule' },
 ];
 
 @NgModule({
