@@ -1,0 +1,68 @@
+<app-header titulo="Card"></app-header>
+
+<ion-content>
+    <!-- Todos os componentes trazem o Mode, Posso usar Material Design ou Ios  -->
+    <ion-card mode="ios" color="primary">
+        <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+
+        <ion-item color="primary">
+            <ion-icon color="light" name="pin" slot="start"></ion-icon>
+            <ion-label>Marcador</ion-label>
+        </ion-item>
+
+        <ion-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis praesentium aliquid accusantium unde saepe eos, 
+            veritatis quidem dolores perspiciatis et sed laborum enim maiores? Natus tempora molestiae laborum quis.
+        </ion-card-content>
+
+        <!-- A diferença entre img e ion-img -->
+        <!-- IMG - Apenas a página é renderizada  -->
+        <!-- ION-IMG - Carrega quando necessário. Quando a imagem está no ponto de entrar no viewpoint -->
+
+        <ion-card>
+            <img>
+            <ion-img src="https://s02.video.glbimg.com/x720/7575101.jpg" 
+            ></ion-img>
+        </ion-card>
+
+    </ion-card>
+
+<br>
+    <ion-card>
+        <img>
+        <ion-img src="http://blog.mixauto.com.br/wp-content/uploads/sites/2/2017/09/capa-os-carros-mais-r%C3%A1pidos-do-mundo.jpg" ></ion-img>
+    </ion-card>
+
+<br>
+    <ion-card>
+        <img>
+        <ion-img src="https://s02.video.glbimg.com/x720/7575101.jpg" ></ion-img>
+
+        <ion-card-content>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error facere quos, voluptate laboriosam vitae expedita odit 
+            nulla accusamus nam dicta sequi asperiores facilis, aspernatur, explicabo culpa odio. Quis, expedita alias.
+        </ion-card-content>
+    </ion-card>
+    
+<br>
+
+    <ion-card-content>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error facere quos, voluptate laboriosam vitae expedita odit 
+        nulla accusamus nam dicta sequi asperiores facilis, aspernatur, explicabo culpa odio. Quis, expedita alias.
+    </ion-card-content>
+
+
+<br>
+<br>
+</ion-content>

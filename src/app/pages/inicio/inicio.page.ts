@@ -27,7 +27,18 @@ export class InicioPage implements OnInit {
         icon: 'beaker',
         name: 'Button',
         redirectTo: '/button'
+      },
+      {
+        icon: 'card',
+        name: 'Cards',
+        redirectTo: '/card'
+      },
+      {
+        icon: 'checkmark-circle-outline',
+        name: 'CheckBox',
+        redirectTo: '/checkbox'
       }
+
   ];
 
 
