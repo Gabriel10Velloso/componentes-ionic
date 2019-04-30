@@ -1,5 +1,6 @@
-.ion-color-btnPersonalizado {
+.ion-color-btnPersonalizado { // Aqui fazendo assim deu certo, mas o correto é alterar em variables.scss
     --ion-color-base: rgba(24, 163, 42,0.5) !important;
     width: 80px;
     height: 80px;
 }
+

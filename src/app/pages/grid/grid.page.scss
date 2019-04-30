@@ -1,0 +1,13 @@
+
+.ion-padding,
+[padding2] {
+  --padding-start: var(--ion-padding, 50px);
+  --padding-end: var(--ion-padding, 50px);
+  --padding-top: var(--ion-padding, 50px);
+  --padding-bottom: var(--ion-padding, 50px);
+  padding-left: var(--ion-padding, 50px);
+  padding-right: var(--ion-padding, 50px);
+  padding-top: var(--ion-padding, 50px);
+  padding-bottom: var(--ion-padding, 50px);
+
+}

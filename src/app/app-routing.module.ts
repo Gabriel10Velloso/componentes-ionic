@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'checkbox', loadChildren: './pages/checkbox/checkbox.module#CheckboxPageModule' },
   { path: 'date-time', loadChildren: './pages/datetime/datetime.module#DatetimePageModule' },
   { path: 'ion-fab', loadChildren: './pages/ion-fab/ion-fab.module#IonFabPageModule' },
+  { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
+  { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
 ];
 
 @NgModule({
