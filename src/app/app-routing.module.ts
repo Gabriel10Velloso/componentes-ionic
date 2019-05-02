@@ -14,6 +14,11 @@ const routes: Routes = [
   { path: 'ion-fab', loadChildren: './pages/ion-fab/ion-fab.module#IonFabPageModule' },
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
   { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
+  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
+  { path: 'list-sliding', loadChildren: './pages/list-sliding/list-sliding.module#ListSlidingPageModule' },
+  { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
+  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
+
 ];
 
 @NgModule({
