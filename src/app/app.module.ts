@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 import { MyOwnCustomMaterialModule } from './material/materail';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     IonicModule.forRoot(),
     AppRoutingModule,
     ComponentsModule,
+    PipesModule,
     MyOwnCustomMaterialModule,
     BrowserAnimationsModule
   ],
