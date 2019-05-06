@@ -73,5 +73,15 @@
         "icon": "phone-portrait",
         "name": "Modal",
         "redirectTo": "/modal"
+      },
+      {
+        "icon": "tablet-portrait",
+        "name": "Pop-Over",
+        "redirectTo": "/popover"
+      },
+      {
+        "icon": "code-working",
+        "name": "ProgressBar y Range",
+        "redirectTo": "/progress-bar"
       }
   ]
