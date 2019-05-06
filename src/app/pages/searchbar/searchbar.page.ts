@@ -9,7 +9,7 @@ import { DataService } from '../../services/data.service';
 export class SearchbarPage implements OnInit {
 
     albums: any[] = [];
-    textoBuscar = ' ';
+    textoBuscar = '';
 
   constructor(private dataService: DataService) { }
 
