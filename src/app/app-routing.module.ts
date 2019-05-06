@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'list-sliding', loadChildren: './pages/list-sliding/list-sliding.module#ListSlidingPageModule' },
   { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
   { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
 
 ];
 

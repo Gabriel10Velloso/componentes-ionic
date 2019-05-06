@@ -1,6 +1,16 @@
 <ion-header no-border>
   <ion-toolbar>
-    <ion-title>Componentes</ion-title>
+    <ion-title color="primary">Componentes</ion-title>
+        <ion-buttons slot="start">
+            <!-- ⌛ Obção  toggleMenu 1
+                 <ion-button (click)="toggleMenu()">
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button> -->
+            <!-- ⌚ Obção  toggleMenu 2 -->
+            <ion-buttons slot="start">
+                <ion-menu-button menu="primeiroMenu"></ion-menu-button>
+            </ion-buttons>
+        </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -8,11 +18,11 @@
 
 
   <ion-list>
-<!--  -->
-    <ion-item *ngFor="let c of componentes"
-              [routerLink]="c.redirectTo" detail> <!-- detail importante para aparecer no androide a flecha de voltar -->
-        <ion-icon slot="start" [name]="c.icon"></ion-icon>
-        <ion-label>{{ c.name }}</ion-label>
+    <!-- Menu  -->
+    <ion-item *ngFor="let menu of componentes | async"
+              [routerLink]="menu.redirectTo" detail> <!-- detail importante para aparecer no androide a flecha de voltar -->
+        <ion-icon slot="start" [name]="menu.icon" color="primary"></ion-icon>
+        <ion-label>{{ menu.name }}</ion-label>
     </ion-item>
 
   </ion-list>
