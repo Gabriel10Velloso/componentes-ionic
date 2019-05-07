@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Componente } from '../../pages/interfaces/interfaces';
 import { Observable } from 'rxjs';
-
+// <!-- Não está sendo udado mais  -->
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
